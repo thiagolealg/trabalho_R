@@ -48,8 +48,20 @@ hist(insulina_cafe_manha1$Value)
 hist(insulina_cafe_manha$Value)
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/d96ce443-3aa5-44bc-8469-889034a2b00b)
 
+# Criar um data frame combinando as duas variáveis
+data <- data.frame(
+  Grupo = c(rep("insulina_cafe_manha1", length(insulina_cafe_manha1$Value)),
+            rep("insulina_cafe_manha", length(insulina_cafe_manha$Value))),
+  Valor = c(insulina_cafe_manha1$Value, insulina_cafe_manha$Value)
+)
 
-Nestas etapas, convertemos a coluna "Value" para o formato numérico e plotamos o histograma para visualizar a distribuição dos dados.
+# Criar o boxplot
+ggplot(data, aes(x = Grupo, y = Valor)) +
+  geom_boxplot(fill = "lightblue", color = "black") +
+  labs(x = "Grupo", y = "Valor", title = "Boxplot das Insulinas") +
+  theme_minimal()
+![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/67eb9091-cd81-4f9b-bf99-f40d6bb01016)
+Nestas etapas, convertemos a coluna "Value" para o formato numérico e plotamos o histograma e boxplot para visualizar a distribuição dos dados.
 
 ## Filtrar pacientes que utilizaram a insulina regular (Code 33) e não utilizaram a insulina 35
 pacientes_regular <- data %>%
@@ -133,16 +145,4 @@ ate_t0 <- pt(t0,df=g1_total)
 2*(1-ate_t0)
 
 
-# Criar um data frame combinando as duas variáveis
-data <- data.frame(
-  Grupo = c(rep("insulina_cafe_manha1", length(insulina_cafe_manha1$Value)),
-            rep("insulina_cafe_manha", length(insulina_cafe_manha$Value))),
-  Valor = c(insulina_cafe_manha1$Value, insulina_cafe_manha$Value)
-)
 
-# Criar o boxplot
-ggplot(data, aes(x = Grupo, y = Valor)) +
-  geom_boxplot(fill = "lightblue", color = "black") +
-  labs(x = "Grupo", y = "Valor", title = "Boxplot das Insulinas") +
-  theme_minimal()
-![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/67eb9091-cd81-4f9b-bf99-f40d6bb01016)
