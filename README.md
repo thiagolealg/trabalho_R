@@ -1,5 +1,5 @@
 
-# Análise Estatístic[Teste de hipótese - diabetes.pdf](https://github.com/thiagolealg/trabalho_R/files/11833770/Teste.de.hipotese.-.diabetes.pdf)
+# Análise Estatística
 a - Teste t de Welch
 
 ## Carregar bibliotecas necessárias
