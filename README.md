@@ -6,58 +6,7 @@
 
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/371d0fdb-5d96-4baa-bd76-a453f0d64c61)
 
-# Análise Estatística - Teste t de Welch
 
-## Grupo 1 (insulina_cafe_manha1)
-- Amostra 1:
-  - Tamanho da amostra (n1): 500
-  - Média (x̄1): 191.224
-  - Variância (s1²): 15.09469
-
-## Grupo 2 (insulina_cafe_manha)
-- Amostra 2:
-  - Tamanho da amostra (n2): 500
-  - Média (x̄2): 174.77
-  - Variância (s2²): 12.10282
-
-## Estatística do Teste t
-Calculamos a estatística do teste t de Welch usando a fórmula:
-
-t0 = (x̄1 - x̄2) / sqrt(s1²/n1 + s2²/n2)
-
-Substituindo os valores, obtemos:
-
-t0 = (191.224 - 174.77) / sqrt(15.09469/500 + 12.10282/500) = 3.1551
-
-## Graus de Liberdade
-Calculamos os graus de liberdade de Welch usando a fórmula:
-
-df = ((s1²/n1 + s2²/n2)^2) / ((s1²/n1)^2/(n1 - 1) + (s2²/n2)^2/(n2 - 1))
-
-Substituindo os valores, obtemos:
-
-df = ((15.09469/500 + 12.10282/500)^2) / ((15.09469/500)^2/(500 - 1) + (12.10282/500)^2/(500 - 1)) = 986.07
-
-## Valor-p
-Calculamos o valor-p usando a distribuição t de Student e os graus de liberdade. O valor-p representa a probabilidade de observar uma estatística de teste t igual ou mais extrema do que o valor observado de t0. Substituindo os valores e usando a tabela da distribuição t de Student, calculamos o valor-p:
-
-Valor-p = P(T > |t0|)
-
-Substituindo os valores, obtemos:
-
-Valor-p = 0.001653
-
-## Intervalo de Confiança (95%)
-Calculamos o intervalo de confiança (95%) usando a fórmula:
-
-Intervalo de Confiança = (x̄1 - x̄2) ± tα/2,df * sqrt(s1²/n1 + s2²/n2)
-
-Substituindo os valores, calculamos os limites inferior e superior do intervalo de confiança:
-
-Intervalo de Confiança = (191.224 - 174.77) ± tα/2,986.07 * sqrt(15.09469/500 + 12.10282/500) = (6.219986, 26.688014)
-
-## Conclusão
-Com base nos resultados do teste t de Welch, podemos concluir que existe uma diferença estatisticamente significativa entre as médias dos grupos. O valor-p de 0.001653 é menor do que o nível de significância usual de 0.05, indicando evidências suficientes para rejeitar a hipótese nula de igualdade das médias. Além disso, o intervalo de confiança (95%) não inclui o valor zero, reforçando a presença de uma diferença significativa entre as médias.
 
 ## Carregar bibliotecas necessárias
 library(ggpubr)
