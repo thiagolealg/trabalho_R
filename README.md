@@ -93,7 +93,7 @@ Realizamos o teste t de Welch para comparar as médias das duas amostras.
 group1 <-insulina_cafe_manha1$Value
 group2 <- insulina_cafe_manha$Value
 
-## Quantidade
+## Operações estatísticas
 group1 <- na.omit(group1)
 group2 <-na.omit(group2)
 
