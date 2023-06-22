@@ -1,6 +1,5 @@
 
 # Análise Estatística
-a - Teste t de Welch
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/498a9daa-9338-4a45-8d07-9dc9dffe520f)
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/ecd8a760-40a9-4e14-b6d5-cf9e6b279c55)
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/371d0fdb-5d96-4baa-bd76-a453f0d64c61)
