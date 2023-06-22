@@ -1,7 +1,9 @@
 
 # Análise Estatística
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/498a9daa-9338-4a45-8d07-9dc9dffe520f)
+
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/ecd8a760-40a9-4e14-b6d5-cf9e6b279c55)
+
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/371d0fdb-5d96-4baa-bd76-a453f0d64c61)
 
 ## Carregar bibliotecas necessárias
@@ -44,8 +46,14 @@ insulina_cafe_manha1$Value <- as.numeric(insulina_cafe_manha1$Value)
 
 ## Plotar o histograma
 hist(insulina_cafe_manha1$Value)
+
+
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/29b10492-d69f-4b34-a3ba-729dc1c1c14c)
+
+
 hist(insulina_cafe_manha$Value)
+
+
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/d96ce443-3aa5-44bc-8469-889034a2b00b)
 
 # Criar um data frame combinando as duas variáveis
@@ -60,7 +68,12 @@ ggplot(data, aes(x = Grupo, y = Valor)) +
   geom_boxplot(fill = "lightblue", color = "black") +
   labs(x = "Grupo", y = "Valor", title = "Boxplot das Insulinas") +
   theme_minimal()
+
+  
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/67eb9091-cd81-4f9b-bf99-f40d6bb01016)
+
+
+
 Nestas etapas, convertemos a coluna "Value" para o formato numérico e plotamos o histograma e boxplot para visualizar a distribuição dos dados.
 
 ## Filtrar pacientes que utilizaram a insulina regular (Code 33) e não utilizaram a insulina 35
