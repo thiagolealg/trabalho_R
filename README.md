@@ -45,16 +45,17 @@ Aqui selecionamos aleatoriamente 500 observações da coluna "Value" e visualiza
 insulina_cafe_manha1$Value <- as.numeric(insulina_cafe_manha1$Value)
 
 ## Plotar o histograma
-hist(insulina_cafe_manha1$Value)
+hist(insulina_cafe_manha$Value)
 
 
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/29b10492-d69f-4b34-a3ba-729dc1c1c14c)
 
 
-hist(insulina_cafe_manha$Value)
+hist(insulina_cafe_manha1$Value)
 
 
-![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/d96ce443-3aa5-44bc-8469-889034a2b00b)
+![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/ff0a0160-4d9e-4a5d-b9c2-d9861bec1e5c)
+
 
 # Criar um data frame combinando as duas variáveis
 data <- data.frame(
