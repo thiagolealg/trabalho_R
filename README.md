@@ -76,6 +76,17 @@ Aqui, definimos a lista de pacientes e filtramos as medidas de insulina antes do
 
 ## Teste t
 t.test(insulina_cafe_manha$Value, insulina_cafe_manha1$Value)
+	Welch Two Sample t-test
+
+data:  group1 and group2
+t = 3.1551, df = 986.07, p-value = 0.001653
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  6.219986 26.688014
+sample estimates:
+mean of x mean of y 
+  191.224   174.770 
+
 
 Realizamos o teste t de Welch para comparar as médias das duas amostras.
 
