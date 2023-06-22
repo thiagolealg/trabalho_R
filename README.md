@@ -128,9 +128,6 @@ Aqui, calculamos os graus de liberdade para o teste t de Welch.
 ate_t0 <- pt(t0,df=g1_total)
 2*(1-ate_t0)
 
-## Boxplot
-# Carregar a biblioteca ggplot2
-library(ggplot2)
 
 # Criar um data frame combinando as duas variáveis
 data <- data.frame(
