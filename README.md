@@ -56,6 +56,18 @@ hist(insulina_cafe_manha1$Value)
 
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/ff0a0160-4d9e-4a5d-b9c2-d9861bec1e5c)
 
+# Gráfico de Densidade
+
+ggplot() +
+  geom_density(data = data, aes(x = Valor, color = "Insulina NPH"), size = 1) +
+  geom_density(data = data2, aes(x = Valor, color = "Insulina Ultralente"), size = 1) +
+  labs(x = "Valor", y = "Densidade", title = "Densidade das Insulinas") +
+  scale_color_manual(values = c("Insulina NPH" = "blue", "Insulina Ultralente" = "red")) +
+  theme_minimal()
+
+
+![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/74e9dad9-bfd1-4671-8d76-c5f6415feb2c)
+
 
 # Criar um data frame combinando as duas variáveis
 data <- data.frame(
