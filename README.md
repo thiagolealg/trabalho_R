@@ -98,11 +98,17 @@ group1 <- na.omit(group1)
 group2 <-na.omit(group2)
 
 num_gr1 <- length(group1)
+
 num_gr2 <- length(group2)
+
 media_gr1 <- mean(group1)
+
 media_gr2 <- mean(group2)
+
 s1_gr1 <- var(group1)/num_gr1
+
 s1_gr2 <- var(group2)/num_gr2
+
 media_diff <- media_gr1 - media_gr2
 
 ## Estatística t
