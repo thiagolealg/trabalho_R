@@ -7,6 +7,44 @@
 ![image](https://github.com/thiagolealg/trabalho_R/assets/113521516/371d0fdb-5d96-4baa-bd76-a453f0d64c61)
 
 
+# Conjunto de Dados de Diabetes
+
+Este repositório contém o conjunto de dados de diabetes disponível publicamente no UCI Machine Learning Repository.
+
+## Descrição do conjunto de dados
+
+O conjunto de dados de Diabetes é originado do Instituto Nacional de Diabetes e Doenças Digestivas e Renais. O objetivo do conjunto de dados é prever se um paciente tem diabetes, com base em certas medidas diagnósticas incluídas no conjunto de dados. Vários constrangimentos foram colocados na seleção dessas instâncias de uma base de dados maior. Em particular, todos os pacientes aqui são mulheres com pelo menos 21 anos de idade.
+
+O conjunto de dados consiste em várias variáveis preditoras médicas e uma variável de destino, 'Outcome'. As variáveis preditoras incluem o número de gestações que a paciente teve, seu IMC, nível de insulina, idade e assim por diante.
+
+## Características do conjunto de dados
+
+1. **Número de instâncias**: 768
+
+2. **Número de atributos**: 8 mais a classe de destino
+
+3. **Atributos** (todos são numéricos):
+    - Número de vezes grávida
+    - Concentração de glicose plasmática a 2 horas em um teste oral de tolerância à glicose
+    - Pressão arterial diastólica (mm Hg)
+    - Espessura da dobra da pele do tríceps (mm)
+    - Insulina sérica de 2 horas (mu U/ml)
+    - Índice de massa corporal (peso em kg/(altura em m)^2)
+    - Função de pedigree de diabetes
+    - Idade (anos)
+    - Classe de destino (0 ou 1)
+
+4. **Valores faltantes**: Sim
+
+5. **Distribuição de classe** (classe valor 1 é interpretado como "teste positivo para diabetes"):
+    - Classe valor 0: 500 instâncias
+    - Classe valor 1: 268 instâncias
+
+## Uso do conjunto de dados
+
+Este conjunto de dados pode ser usado para resolver problemas de classificação em Machine Learning e Data Science. Pode ser utilizado para treinar modelos de Machine Learning para prever se um paciente tem diabetes com base nas características fornecidas.
+
+Nota: As informações acima são uma interpretação do conjunto de dados de diabetes do UCI Machine Learning Repository. Para mais informações, visite a [página oficial do conjunto de dados](https://archive.ics.uci.edu/dataset/34/diabetes).
 
 ## Carregar bibliotecas necessárias
 library(ggpubr)
